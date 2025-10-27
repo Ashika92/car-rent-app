@@ -5,8 +5,8 @@
   ],
   "buildCommand": "npm run build",
   "outputDirectory": "car-rent-app/dist",
-  "framework": "vite",
   "routes": [
-    { "src": "/(.*)", "dest": "car-rent-app/dist/$1" }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "car-rent-app/dist/index.html" }
   ]
 }
