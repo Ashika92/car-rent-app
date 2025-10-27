@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+
+/* index.css */
+
+/* Light Mode */
+body.light {
+  background: linear-gradient(to right, #d8b4fe, #a5f3fc);
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #20024a;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
