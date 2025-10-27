@@ -1,8 +1,12 @@
 {
+  "version": 2,
   "builds": [
-    { "src": "vite.config.js", "use": "@vercel/static-build" }
+    { "src": "car-rent-app/package.json", "use": "@vercel/static-build" }
   ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "car-rent-app/dist",
+  "framework": "vite",
   "routes": [
-    { "src": "/(.*)", "dest": "/" }
+    { "src": "/(.*)", "dest": "car-rent-app/dist/$1" }
   ]
 }
