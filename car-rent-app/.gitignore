@@ -27,6 +27,7 @@ build
 
 # Vercel and deployment configs
 .vercel
+vercel.json
 
 # Editor and system files
 .vscode/*
@@ -43,3 +44,11 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Ignore outer lock file if exists
+/package-lock.json
+
+# Ignore backup or temporary folders
+temp/
+tmp/
+.cache/
