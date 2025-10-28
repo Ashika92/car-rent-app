@@ -4,12 +4,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const CarouselSection = () => {
   const cars = [
-    { id: 1, image: "https://gomechanic.in/blog/wp-content/uploads/2021/07/Tata-Nexon-Dark-Edition-1000x563.jpg" },
-    { id: 2, image: "https://www.spinny.com/blog/wp-content/uploads/2024/09/videoframe_0.webp" },
+    { id: 1, image: "https://thumbs.dreamstime.com/b/artistic-silhouette-car-luggage-against-vibrant-sunset-sky-scenic-landscape-stunning-loaded-highlighting-396852614.jpg" },
+    { id: 2, image: "https://www.hdcarwallpapers.com/walls/2017_jeep_wrangler_red_rock_edition-HD.jpg" },
     { id: 3, image: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Exter/Highlights/smallimageexter2_5.jpg" },
     { id: 4, image: "https://skift.com/wp-content/uploads/2020/04/AdobeStock_308962487-scaled-e1588326591558.jpeg" },
-    { id: 5, image: "https://thumbs.dreamstime.com/b/artistic-silhouette-car-luggage-against-vibrant-sunset-sky-scenic-landscape-stunning-loaded-highlighting-396852614.jpg" },
+    { id: 5, image: "https://gomechanic.in/blog/wp-content/uploads/2021/07/Tata-Nexon-Dark-Edition-1000x563.jpg" },
     { id: 6, image: "https://thumbs.dreamstime.com/b/silhouette-children-sitting-car-roof-arms-raised-country-road-pyramid-hill-background-sunset-freedom-joy-silhouette-385683934.jpg" },
+    
   ];
 
   const groupedCars = [];

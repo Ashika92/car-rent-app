@@ -1,13 +1,16 @@
 import { defineConfig } from "vite";
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [tailwindcss(), react()],
+  css: {
+    transformer: "postcss", // ✅ Prevents lightningcss Linux binary issue
+  },
   optimizeDeps: {
-    include: ["react", "react-dom"]
+    include: ["react", "react-dom"],
   },
   resolve: {
-    dedupe: ["react", "react-dom"]
-  }
+    dedupe: ["react", "react-dom"],
+  },
 });
