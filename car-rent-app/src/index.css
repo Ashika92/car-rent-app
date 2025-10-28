@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 
-
-/* index.css */
-
 /* Light Mode */
 body.light {
   background: linear-gradient(to right, #d8b4fe, #a5f3fc);

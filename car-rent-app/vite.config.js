@@ -1,16 +1,7 @@
 import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 
+// ✅ Clean, stable config for Vite + React + Tailwind v4
 export default defineConfig({
-  plugins: [tailwindcss(), react()],
-  css: {
-    transformer: "postcss", // ✅ Prevents lightningcss Linux binary issue
-  },
-  optimizeDeps: {
-    include: ["react", "react-dom"],
-  },
-  resolve: {
-    dedupe: ["react", "react-dom"],
-  },
+  plugins: [react()],
 });
